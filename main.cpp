@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
 
-  int i,j; //Variáveis Auxiliares
+  int i,j; 
   ofstream arquivoE;
   arquivoE.open("arquivo.txt",ios_base::in);
   if(!arquivoE){
@@ -27,11 +27,11 @@ int main() {
     srand(time(NULL));
   
  
-  char **nomes; //Observe que é um ponteiro para um ponteiro
-  nomes =(char**) malloc(sizeof(char*)*100); //Aqui você aloca 10 ponteiros de char, ou seja, 10 strings **vazias**, ainda **não alocadas**.
+  char **nomes; 
+  nomes =(char**) malloc(sizeof(char*)*100); 
 
-  for (i = 0; i < 100; i++){ //Percorre as linhas do Vetor de Ponteiros
-       nomes[i] = (char*) malloc(100 * sizeof(char)); //Aloca um Vetor de Inteiros para cada posição do Vetor de Ponteiros
+  for (i = 0; i < 100; i++){ 
+       nomes[i] = (char*) malloc(100 * sizeof(char)); 
 
   }
 
